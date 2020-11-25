@@ -3,7 +3,7 @@ const {ApolloServer, PubSub} = require("apollo-server");
 
 //MONGO
 const mongoose = require("mongoose");
-const {MONGODB} = require("./config");
+const {MONGODB} = require("./config.js");
 
 
 //GRAPHQL
