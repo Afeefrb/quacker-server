@@ -54,7 +54,7 @@ module.exports = {
                 info
             ){ //$ end
 
-            const {valid,errors} = validateRegisterInput(username, email, password, confirmPassword);
+            const {valid,errors} = validateRegisterInput(username, email, password, confirmPassword, profilePic);
 
             if(!valid) { 
                 throw new UserInputError("Errors", {errors})
@@ -75,6 +75,7 @@ module.exports = {
                 username,
                 email,
                 password,
+                profilePic,
                 createdAt: new Date().toISOString()
             })
 
