@@ -48,7 +48,7 @@ module.exports = {
        async register( //$ start ==> register( parent, {args}, context, info) //▇▇▇
             _,
             {
-                registerInput:{username, email, password, confirmPassword, profilePic}
+                registerInput:{username, email, password, confirmPassword}
             }, 
                 context,
                 info
@@ -77,7 +77,6 @@ module.exports = {
                 username,
                 email,
                 password,
-                profilePic,
                 createdAt: new Date().toISOString()
             })
 
