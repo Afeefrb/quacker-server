@@ -54,7 +54,7 @@ module.exports = {
                 info
             ){ //$ end
 
-                console.log("[userResolver.js] profilePic: ", profilePic );
+                // console.log("[userResolver.js] profilePic: ", profilePic );
 
             const {valid,errors} = validateRegisterInput(username, email, password, confirmPassword);
 
